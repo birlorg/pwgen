@@ -7,15 +7,17 @@
 .PHONY: all clean test
 
 # Change redbean to whatever you want
-PROJECT=redbean
+PROJECT=pwgen
 REDBEAN=${PROJECT}.com
 REDBEAN_VERSION=3.0.0
 REDBEAN_DL=https://redbean.dev/redbean-${REDBEAN_VERSION}.com
 
 ZIP=zip.com
-ZIP_DL=https://redbean.dev/zip.com
+ZIP_DL=https://cosmo.zip/pub/cosmos/bin/zip
 UNZIP=unzip.com
-UNZIP_DL=https://redbean.dev/unzip.com
+UNZIP_DL=https://cosmo.zip/pub/cosmos/bin/unzip
+SQLITE=sqlite3.com
+SQLITE_DL=https://cosmo.zip/pub/cosmos/bin/sqlite3
 
 NPD=--no-print-directory
 

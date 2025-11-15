@@ -4,3 +4,7 @@ redbean.com
 redbean.com.template
 srv/.lua/words.lua
 zip.com
+.rb*
+definitions/redbean.lua
+sqlite.com
+unzip.com
