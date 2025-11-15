@@ -1,14 +1,6 @@
 -- https://redbean.dev/#usage
 require("words")
 
-function bytes2uint(str)
-    local uint = 0
-    for i = 1, #str do
-        uint = uint + str:byte(i) * 0x100^(i-1)
-    end
-    return uint
-end
-
 math.randomseed(Rdrand())
 
 function genword()
