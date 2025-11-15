@@ -7,11 +7,15 @@ This code is compiled via [redbean](https://redbean.dev/) so it runs natively on
 
 If you have problems running the binary in releases, see [redbeans install section](https://redbean.dev/#install) below the actual installation which you can skip, it has platform specific notes that might be useful. Feel free to send a patch updating this for your particular platform.
 
+The passwords follow a predictable, easy pattern and are easy to share verbally over the phone, etc.
+
 ### security
 
 It's not high-security, but it's reasonable-ish security.
 We pull from /dev/random if it exists, otherwise we use the current time as our random seed generation.
 Again, not perfect, but reasonable-ish for it to just work, which is more important.
+
+Personally I use this when I need to set an intial password to share for other people. So it's a short-duration, initial password for others.  Otherwise I use my password managers generator.
 
 The [wordlist](https://www.eff.org/files/2016/07/18/eff_large_wordlist.txt) comes from the [EFF](https://www.eff.org)'s [passphrase wordlist](https://www.eff.org/document/passphrase-wordlists). It's compiled into the binary. You don't have to do anything.
 

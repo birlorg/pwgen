@@ -9,16 +9,7 @@ function bytes2uint(str)
     return uint
 end
 
-if path.exists('/dev/random') then
-    fd = assert(unix.open('/dev/random', unix.O_RDONLY))
-    rand_seed = unix.read(fd,6)
--- print(rand_seed)
-    rand_seed = bytes2uint(rand_seed)
--- print(rand_seed)
-    math.randomseed(rand_seed)
-else
-    math.randomseed(unix.clock_gettime())
-end
+math.randomseed(Rdrand())
 
 function genword()
     i = math.random(1,#words)
