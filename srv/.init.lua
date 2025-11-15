@@ -35,7 +35,7 @@ function genwords(numwords)
 end
 
 i = math.random(1,#words)
-print(genwords(6) .. tostring(math.random(1,100)))
+print(genwords(6) .. tostring(math.random(1,99)))
 unix.exit(0)
 -- Uncomment this to launch a browser on start
 --LaunchBrowser("/")
